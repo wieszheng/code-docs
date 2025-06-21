@@ -4,7 +4,7 @@ import { devDependencies } from '../../package.json'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/code-docs/",
+  base: ".",
   title: "UTest",
   description: "UTest 一款Ai接口自动化测试平台。",
   //启用深色模式
