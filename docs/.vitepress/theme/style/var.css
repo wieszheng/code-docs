@@ -1,0 +1,60 @@
+/* var.css */
+:root {
+    --vp-c-brand-1: #18794e;
+    --vp-c-brand-2: #299764;
+    --vp-c-brand-3: #30a46c;
+}
+
+.dark {
+    --vp-c-brand-1: #3dd68c;
+    --vp-c-brand-2: #30a46c;
+    --vp-c-brand-3: #298459;
+}
+
+
+:root {
+    /* hero标题渐变色 */
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #eebd89, #d13abd);
+
+    /*hero logo背景渐变色 */
+    --vp-home-hero-image-background-image: linear-gradient(-45deg, #eebd89 50%, #d13abd 50%);
+    --vp-home-hero-image-filter: blur(40px);
+}
+
+.VPDoc h1 {
+    background: -webkit-linear-gradient(10deg, #eebd89 5%, #d13abd 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* VPFeatures 页卡悬浮效果 */
+.VPFeatures .items .item {
+    transition: transform 0.3s;
+}
+
+.VPFeatures .items .item:hover {
+    transform: translateY(-5px);
+}
+
+.VPNavBarTitle .title {
+    transition: all 0.25s;
+    &:hover {
+        color: var(--vp-c-brand);
+    }
+}
+
+.version-tag {
+    font-size: 11px;
+    line-height: 1.271;
+    font-weight: bold;
+    padding: 4px 6px;
+    margin-left: 6px;
+    background: var(--vp-c-brand-3);
+    color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 18px;
+}
