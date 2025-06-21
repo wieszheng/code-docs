@@ -1,4 +1,7 @@
 {
+  "name": "code-docs",
+  "version": "1.0.0",
+  "license": "MIT",
   "devDependencies": {
     "canvas-confetti": "^1.9.3",
     "vitepress": "^1.6.3",
