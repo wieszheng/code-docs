@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /markdown-examples
+      link: /adb-tutorial
     - theme: alt
       text: GitHub
       link: /api-examples

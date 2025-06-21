@@ -38,12 +38,12 @@
     transform: translateY(-5px);
 }
 
-.VPNavBarTitle .title {
-    transition: all 0.25s;
-    &:hover {
-        color: var(--vp-c-brand);
-    }
-}
+/*.VPNavBarTitle .title {*/
+/*    transition: all 0.25s;*/
+/*    &:hover {*/
+/*        color: var(--vp-c-brand);*/
+/*    }*/
+/*}*/
 
 .version-tag {
     font-size: 11px;

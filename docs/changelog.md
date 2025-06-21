@@ -1,7 +1,6 @@
 ---
 sidebar: false
 outline: false
-editLink: false
 prev: false
 next: false
 ---
@@ -14,6 +13,7 @@ next: false
 > 首次更新配置内容！
 >
 
-## 2025-6-21
 
+::: timeline 2025-6-21
 - 新增更新日志
+:::
