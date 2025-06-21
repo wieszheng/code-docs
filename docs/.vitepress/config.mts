@@ -4,14 +4,14 @@ import { devDependencies } from '../../package.json'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/code-docs",
+  base: "/code-docs/",
   title: "UTest",
   description: "UTest 一款Ai接口自动化测试平台。",
   //启用深色模式
   appearance: 'dark',
-
+  cleanUrls: true,
   head: [
-    ['link',{ rel: 'icon', href: '/logo-uwu.png'}],
+    ['link',{ rel: 'icon', href: 'logo-uwu.png'}],
 
   ],
   //markdown配置
@@ -49,7 +49,23 @@ export default defineConfig({
 
     //本地搜索 //
     search: {
-      provider: 'local'
+      provider: "local",
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索文档",
+            buttonAriaLabel: "搜索文档",
+          },
+          modal: {
+            noResultsText: "无法找到相关结果",
+            resetButtonTitle: "清除查询条件",
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+            },
+          },
+        },
+      },
     },
 
     lastUpdated: {
