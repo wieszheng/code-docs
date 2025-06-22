@@ -82,16 +82,48 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Python',
-        link: '/python/aiohttp',
-        activeMatch: '/python/'
+        items: [
+          { text: '库',
+            items: [
+              { text: 'aiohttp', link: '/python/aiohttp' },
+              { text: 'tqdm', link: '/python/tqdm' },
+            ]
+          },
+          { text: '框架',
+
+            items: [
+              { text: 'fastapi', link: '/python/fastapi' },
+            ]
+          },
+        ]
       },
       { text: 'Android',
         items: [
-          { text: 'adb', link: '/adb-tutorial' },
+          { text: '工具',
+            items: [
+              { text: 'ADB', link: '/android/adb' },
+            ]
+          },
         ]
       },
-      { text: 'HarmonyOS', link: '/harmony/hdc' },
-      { text: 'IOS', link: '/ios/xcode' },
+      { text: 'HarmonyOS',
+        items: [
+          { text: '工具',
+            items: [
+              { text: 'HDC', link: '/harmony/hdc' },
+            ]
+          },
+        ]
+      },
+      { text: 'IOS',
+        items: [
+          { text: '工具',
+            items: [
+              { text: 'Xcode', link: '/ios/xcode' },
+            ]
+          },
+        ]
+      },
       { text: `VitePress ${devDependencies.vitepress.replace('^', '')}`, link: 'https://vitepress.dev/zh/' },
       { text: '更新日志', link: '/changelog' },
     ],
@@ -101,15 +133,15 @@ export default defineConfig({
         base: '/python/',
         items: [
           { text: '库',
-            collapsed: false,
             items: [
-              { text: 'aiohttp', link: '/aiohttp' },
+              { text: 'aiohttp', link: 'aiohttp' },
+              { text: 'tqdm', link: 'tqdm' },
             ]
           },
           { text: '框架',
             collapsed: false,
             items: [
-               { text: 'fastapi', link: '/fastapi' },
+               { text: 'fastapi', link: 'fastapi' },
             ]
           },
         ]
@@ -119,7 +151,27 @@ export default defineConfig({
         items: [
           { text: 'HDC 命令',
             items: [
-              { text: 'hdc', link: '/hdc' },
+              { text: 'hdc', link: 'hdc' },
+            ]
+          },
+        ]
+      },
+      '/android/': {
+        base: '/android/',
+        items: [
+          { text: 'ADB 命令',
+            items: [
+              { text: 'adb', link: 'adb' },
+            ]
+          },
+        ]
+      },
+      '/ios/': {
+        base: '/ios/',
+        items: [
+          { text: '终端',
+            items: [
+              { text: 'xcode', link: 'xcode' },
             ]
           },
         ]

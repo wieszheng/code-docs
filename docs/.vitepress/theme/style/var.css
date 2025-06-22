@@ -29,6 +29,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: '微软雅黑', sans-serif;
 }
 
 /* VPFeatures 页卡悬浮效果 */
@@ -46,7 +47,6 @@
 /*        color: var(--vp-c-brand);*/
 /*    }*/
 /*}*/
-
 
 
 .version-tag {
