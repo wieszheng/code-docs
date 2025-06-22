@@ -81,6 +81,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
+      { text: 'Python',
+        link: '/python/aiohttp',
+        activeMatch: '/python/'
+      },
       { text: 'Android',
         items: [
           { text: 'adb', link: '/adb-tutorial' },
@@ -92,23 +96,35 @@ export default defineConfig({
       { text: '更新日志', link: '/changelog' },
     ],
 
-    sidebar: [
-      {
-        text: 'Android',
+    sidebar: {
+      '/python/': {
+        base: '/python/',
         items: [
-          { text: 'adb', link: '/adb-tutorial' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-
+          { text: '库',
+            collapsed: false,
+            items: [
+              { text: 'aiohttp', link: '/aiohttp' },
+            ]
+          },
+          { text: '框架',
+            collapsed: false,
+            items: [
+               { text: 'fastapi', link: '/fastapi' },
+            ]
+          },
         ]
       },
-      {
-        text: 'HarmonyOS',
+      '/harmony/': {
+        base: '/harmony/',
         items: [
-          { text: 'hdc', link: '/harmony/hdc' },
+          { text: 'HDC 命令',
+            items: [
+              { text: 'hdc', link: '/hdc' },
+            ]
+          },
         ]
-      }
-
-    ],
+      },
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/wieszheng' },

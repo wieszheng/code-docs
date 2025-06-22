@@ -27,15 +27,15 @@ yarn -v
 bun -v
 ```
 
-```sh [react]
+```js [react]
 console.log("I'm react");
 ```
 
-```sh [next]
+```js [next]
 console.log("I'm next");
 ```
 
-```sh [nuxt]
+```js [nuxt]
 console.log("I'm nuxt");
 ```
 
@@ -48,11 +48,11 @@ export default defineConfig({
 })
 ```
 
-```sh [js]
+```js [js]
 console.log("I'm JavaScript");
 ```
 
-```sh [css]
+```css [css]
 console.log("I'm css");
 ```
 :::

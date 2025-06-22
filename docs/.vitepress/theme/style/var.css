@@ -22,7 +22,9 @@
     --vp-home-hero-image-filter: blur(40px);
 }
 
+/** 标题1 样式 */
 .VPDoc h1 {
+    /*text-align: center;*/
     background: -webkit-linear-gradient(10deg, #eebd89 5%, #d13abd 20%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -44,6 +46,8 @@
 /*        color: var(--vp-c-brand);*/
 /*    }*/
 /*}*/
+
+
 
 .version-tag {
     font-size: 11px;
