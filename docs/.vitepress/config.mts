@@ -12,7 +12,7 @@ export default defineConfig({
   appearance: 'dark',
   cleanUrls:true, //开启纯净链接
   head: [
-    ['link',{ rel: 'icon', href: 'logo-uwu.png'}],
+    ['link',{ rel: 'icon', href: 'rspress-icon.png'}],
 
   ],
   //markdown配置
@@ -47,7 +47,7 @@ export default defineConfig({
   lastUpdated: true,
 
   themeConfig: {
-    logo: '/logo-uwu.png',
+    logo: '/rspress-icon.png',
     siteTitle: false, //标题隐藏
 
     //本地搜索

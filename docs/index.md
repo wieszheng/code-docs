@@ -7,7 +7,7 @@ hero:
   text: "Ai Test platform"
   tagline: 一款致力于打造多功能测试平台项目。
   image:
-    src: /logo-uwu.png
+    src: /rspress-icon.png
     alt: VitePress
   actions:
     - theme: brand
