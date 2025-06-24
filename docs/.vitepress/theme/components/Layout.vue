@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
-import BackToTops from './BackToTops.vue';
+import BackToTops from './BackToTop.vue';
 
 import { useData } from 'vitepress'
 import { nextTick, provide } from 'vue'
