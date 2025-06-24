@@ -8,7 +8,7 @@ export default defineConfig({
   title: "CodeDocs",
   description: "The code documentation of wieszheng",
   outDir: './dist',
-
+  base: '/code-docs',
   appearance: 'dark', //启用深色模式
   cleanUrls:true, //开启纯净链接
   lastUpdated: true,
