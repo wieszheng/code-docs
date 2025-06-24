@@ -47,23 +47,10 @@ onBeforeUnmount(() => window.removeEventListener("scroll", onScroll));
 </script>
 
 <style lang="css" scoped>
-.vitepress-backTop-main {
-  z-index: 999;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #3eaf7c;
-  padding: 10px;
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.15);
-}
 
 .vitepress-backTop-main:hover svg {
   animation: bounce linear 0.6s infinite;
-  transition: all 0.5;
+  transition: all;
 }
 
 svg {

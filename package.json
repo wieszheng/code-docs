@@ -1,21 +1,15 @@
 {
-  "name": "code-docs",
-  "version": "1.0.0",
-  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^24.0.3",
     "canvas-confetti": "^1.9.3",
     "nprogress-v2": "^1.1.10",
     "vitepress": "^1.6.3",
     "vitepress-markdown-timeline": "^1.2.2",
     "vitepress-plugin-group-icons": "^1.6.0"
   },
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
-  },
-  "dependencies": {
-    "gsap": "^3.13.0"
   }
 }

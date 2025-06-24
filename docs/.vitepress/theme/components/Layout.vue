@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide } from 'vue'
+import BackToTop from "./BackToTop.vue";
 
-// 组件
-import BackToTop from "./Backtotop.vue";
-import Tags from "./Tags.vue";
+import { useData } from 'vitepress'
+import { nextTick, provide } from 'vue'
 
 const { isDark } = useData()
 
@@ -43,47 +41,17 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 })
 </script>
 
-
 <template>
-  <DefaultTheme.Layout v-bind="$attrs">
+  <DefaultTheme.Layout>
+
+    <!-- doc-footer-before插槽 -->
     <template #doc-footer-before>
       <BackToTop />
     </template>
 
-    <!-- doc-before插槽 -->
-<!--    <template #doc-before>-->
-<!--      <Tags />-->
-<!--    </template>-->
-
   </DefaultTheme.Layout>
 </template>
 
-<style>
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
+<style scoped>
 
-::view-transition-old(root),
-.dark::view-transition-new(root) {
-  z-index: 1;
-}
-
-::view-transition-new(root),
-.dark::view-transition-old(root) {
-  z-index: 9999;
-}
-
-.VPSwitchAppearance {
-  width: 22px !important;
-}
-
-.VPSwitchAppearance .check {
-  transform: none !important;
-}
-
-.VPSwitchAppearance .check .icon {
-  top: -2px;
-}
 </style>

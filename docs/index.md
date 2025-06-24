@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "UTest"
-  text: "Ai Test platform"
-  tagline: 一款致力于打造多功能测试平台项目。
+  name: "CodeDocs"
+  text: "wieszheng's code"
+  tagline: Technical Learning and Practice Guide
   image:
     src: /rspress-icon.png
     alt: VitePress
@@ -29,15 +29,5 @@ features:
     details: 带您探索技术世界的奥秘，分享引人入胜、充满创意的思想，让您深刻理解技术变革的驱动力。
 
 ---
-<script setup lang="ts">
-  import { onMounted } from 'vue'
-  import { version } from '.vitepress/theme/untils/version'
- 
-  onMounted(() => {
-    version()
-  })
-</script>
 
 <confetti />
-
-
