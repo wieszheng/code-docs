@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
-import BackToTop from './BackToTop.vue';
+import BackToTops from './BackToTops.vue';
 
 import { useData } from 'vitepress'
 import { nextTick, provide } from 'vue'
@@ -46,7 +46,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
     <!-- doc-footer-before插槽 -->
     <template #doc-footer-before>
-      <BackToTop />
+      <BackToTops />
     </template>
 
   </DefaultTheme.Layout>
