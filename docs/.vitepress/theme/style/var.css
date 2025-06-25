@@ -118,3 +118,17 @@
     padding: 10px;
     box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.15);
 }
+
+.version-tag {
+    font-size: 11px;
+    line-height: 1.271;
+    font-weight: bold;
+    padding: 4px 6px;
+    margin-left: 6px;
+    background: var(--vp-c-brand-1);
+    color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 18px;
+}

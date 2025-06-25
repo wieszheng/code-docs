@@ -3,6 +3,9 @@ import timeline from "vitepress-markdown-timeline";
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 
 
+import { nav } from './config/nav'
+import { sidebar } from './config/sidebar'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "CodeDocs",
@@ -18,7 +21,6 @@ export default defineConfig({
   ],
   markdown: {
     lineNumbers: true, //行号显示
-
     config: (md) => {
       md.use(timeline); //时间线
       md.use(groupIconMdPlugin) //代码组图标
@@ -41,6 +43,7 @@ export default defineConfig({
     ],
   },
   themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
     logo: '/rspress-icon.png',
     //本地搜索
     search: {
@@ -114,115 +117,8 @@ export default defineConfig({
       pattern: 'https://github.com/wieszheng/code-docs/edit/master/docs/:path', // 改成自己的仓库
       text: '在GitHub编辑本页'
     },
-
-    nav: [
-      { text: '首页', link: '/' },
-      { text: 'Python',
-        items: [
-          { text: '库',
-            items: [
-              { text: 'aiohttp', link: '/python/aiohttp' },
-              { text: 'tqdm', link: '/python/tqdm' },
-            ]
-          },
-          { text: '框架',
-
-            items: [
-              { text: 'fastapi', link: '/python/fastapi' },
-            ]
-          },
-        ]
-      },
-      { text: 'Android',
-        items: [
-          { text: '工具',
-            items: [
-              { text: 'ADB', link: '/android/adb' },
-            ]
-          },
-        ]
-      },
-      { text: 'HarmonyOS',
-        items: [
-          { text: '工具',
-            items: [
-              { text: 'HDC', link: '/harmony/hdc' },
-            ]
-          },
-        ]
-      },
-      { text: 'IOS',
-        items: [
-          { text: '工具',
-            items: [
-              { text: 'Xcode', link: '/ios/xcode' },
-            ]
-          },
-        ]
-      },
-      { text: '更新日志',
-        items: [
-          { text: '说明', link: '/changelog' },
-          {
-            component: 'RainbowAnimationSwitcher',
-            props: {
-              text: '彩虹动画',
-            }
-          }
-        ]
-      }
-    ],
-
-    sidebar: {
-      '/python/': {
-        base: '/python/',
-        items: [
-          { text: '库',
-            items: [
-              { text: 'aiohttp', link: 'aiohttp' },
-              { text: 'tqdm', link: 'tqdm' },
-            ]
-          },
-          { text: '框架',
-            collapsed: false,
-            items: [
-              { text: 'fastapi', link: 'fastapi' },
-            ]
-          },
-        ]
-      },
-      '/harmony/': {
-        base: '/harmony/',
-        items: [
-          { text: 'HDC 命令',
-            items: [
-              { text: 'hdc', link: 'hdc' },
-            ]
-          },
-        ]
-      },
-      '/android/': {
-        base: '/android/',
-        items: [
-          { text: 'ADB 命令',
-            items: [
-              { text: 'adb', link: 'adb' },
-            ]
-          },
-        ]
-      },
-      '/ios/': {
-        base: '/ios/',
-        items: [
-          { text: '终端',
-            items: [
-              { text: 'xcode', link: 'xcode' },
-            ]
-          },
-        ]
-      },
-    },
-
+    nav,
+    sidebar,
 
   }
 })

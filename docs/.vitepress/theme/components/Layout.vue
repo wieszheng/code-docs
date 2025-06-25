@@ -1,9 +1,9 @@
+<!-- .vitepress/theme/Layout.vue -->
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
-import BackToTops from './BackToTop.vue';
-
 import { useData } from 'vitepress'
 import { nextTick, provide } from 'vue'
+import BackToTop from "./BackToTop.vue";
 
 const { isDark } = useData()
 
@@ -43,12 +43,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <DefaultTheme.Layout>
-
-    <!-- doc-footer-before插槽 -->
-    <template #doc-footer-before>
-      <BackToTops />
-    </template>
-
+    <BackToTop />
   </DefaultTheme.Layout>
 </template>
 

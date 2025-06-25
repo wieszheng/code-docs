@@ -29,5 +29,12 @@ features:
     details: 带您探索技术世界的奥秘，分享引人入胜、充满创意的思想，让您深刻理解技术变革的驱动力。
 
 ---
-
+<script setup lang="ts">
+  import { onMounted } from 'vue'
+  import { version } from '.vitepress/theme/untils/version'
+ 
+  onMounted(() => {
+    version()
+  })
+</script>
 <confetti />

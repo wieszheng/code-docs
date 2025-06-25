@@ -1,6 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
-import {h, watch} from 'vue'
-import {inBrowser, Theme} from 'vitepress'
+import {watch} from 'vue'
+import {inBrowser} from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import {NProgress} from "nprogress-v2";
 
@@ -10,10 +10,9 @@ import 'nprogress-v2/dist/index.css' // 进度条样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
 import RainbowAnimationSwitcher from "./components/RainbowAnimationSwitcher.vue";
+import Layout from "./components/Layout.vue";
 import Confetti from "./components/Confetti.vue"
 import ArticleMetadata from "./components/ArticleMetadata.vue";
-import Layout from "./components/Layout.vue";
-
 
 
 let homePageStyle: HTMLStyleElement | undefined
@@ -23,8 +22,8 @@ export default {
   Layout: Layout,
 
   enhanceApp({ app, router, siteData }) {
-    app.component('Confetti' , Confetti)
     app.component('RainbowAnimationSwitcher', RainbowAnimationSwitcher)
+    app.component('Confetti' , Confetti)
     app.component('ArticleMetadata' , ArticleMetadata)
 
     if (inBrowser) {
@@ -36,7 +35,6 @@ export default {
         NProgress.done() // 停止进度条
       }
     }
-
     if (typeof window === 'undefined') return
 
     watch(
