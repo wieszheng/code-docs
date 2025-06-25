@@ -21,13 +21,13 @@ export default {
   extends: DefaultTheme,
   Layout: Layout,
 
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({app, router, siteData}) {
     app.component('RainbowAnimationSwitcher', RainbowAnimationSwitcher)
-    app.component('Confetti' , Confetti)
-    app.component('ArticleMetadata' , ArticleMetadata)
+    app.component('Confetti', Confetti)
+    app.component('ArticleMetadata', ArticleMetadata)
 
     if (inBrowser) {
-      NProgress.configure({ showSpinner: false })
+      NProgress.configure({showSpinner: false})
       router.onBeforeRouteChange = () => {
         NProgress.start() // 开始进度条
       }
@@ -38,9 +38,9 @@ export default {
     if (typeof window === 'undefined') return
 
     watch(
-        () => router.route.data.relativePath,
-        () => updateHomePageStyle(location.pathname === '/'),
-        { immediate: true },
+      () => router.route.data.relativePath,
+      () => updateHomePageStyle(location.pathname === '/'),
+      {immediate: true},
     )
   }
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useLocalStorage, useMediaQuery } from '@vueuse/core'
-import { inBrowser } from 'vitepress'
-import { computed, watch } from 'vue'
+import {useLocalStorage, useMediaQuery} from '@vueuse/core'
+import {inBrowser} from 'vitepress'
+import {computed, watch} from 'vue'
 import RainbowSwitcher from './RainbowSwitcher.vue'
 
 defineProps<{ text?: string; screenMenu?: boolean }>()
@@ -19,7 +19,7 @@ watch(animated, (anim) => {
   if (anim) {
     document.documentElement.classList.add('rainbow')
   }
-}, { immediate: inBrowser, flush: 'post' })
+}, {immediate: inBrowser, flush: 'post'})
 
 const switchTitle = computed(() => {
   return animated.value
@@ -41,8 +41,8 @@ const switchTitle = computed(() => {
             :aria-checked="animated ? 'true' : 'false'"
             @click="toggleRainbow"
         >
-          <span class="i-tabler:rainbow animated" />
-          <span class="i-tabler:rainbow-off non-animated" />
+          <span class="i-tabler:rainbow animated"/>
+          <span class="i-tabler:rainbow-off non-animated"/>
         </RainbowSwitcher>
       </div>
     </div>
@@ -88,6 +88,7 @@ const switchTitle = computed(() => {
   background-color: var(--vp-c-bg-elv);
   max-width: 220px;
 }
+
 .group.mobile .NavScreenRainbowAnimation {
   max-width: unset;
 }

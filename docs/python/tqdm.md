@@ -1,9 +1,11 @@
 # tqdm
+
 `tqdm` 是一个快速，可扩展的Python进度条库，它可以轻松的在终端和 `notebook` 中显示进度条。
 
 ---
 
 ### 1. **安装 `tqdm`**
+
 ```bash
 pip install tqdm
 ```
@@ -23,6 +25,7 @@ for i in tqdm(range(100)):
 ---
 
 ### 3. **参数介绍**
+
 - `iterable`: 可迭代对象。
 - `total`: 刻度总大小。
 - `desc`: 进度条标题。
@@ -33,6 +36,7 @@ for i in tqdm(range(100)):
 ---
 
 ### 4. **官方文档**
+
 > Pypi Reference: [tqdm](https://pypi.org/project/tqdm/)
-> 
+>
 > Official Reference：[tqdm](https://tqdm.github.io/)

@@ -1,15 +1,20 @@
 # aiohttp
-`aiohttp` 是一个用于 Python 的异步 HTTP 客户端/服务器框架，基于 `asyncio`，非常适合需要高并发网络请求的场景，例如爬虫、API 调用等。下面我会介绍 `aiohttp` 的基本用法，包括安装、发送异步请求、处理响应，以及常见的使用场景。
+
+`aiohttp` 是一个用于 Python 的异步 HTTP 客户端/服务器框架，基于 `asyncio`，非常适合需要高并发网络请求的场景，例如爬虫、API
+调用等。下面我会介绍 `aiohttp` 的基本用法，包括安装、发送异步请求、处理响应，以及常见的使用场景。
 
 ---
 
 ### 1. **安装 `aiohttp`**
+
 首先，确保你已安装 `aiohttp`：
+
 ```bash
 pip install aiohttp
 ```
 
 如果需要加速（可选），可以安装 `aiodns` 和 `cchardet`：
+
 ```bash
 pip install aiodns cchardet
 ```
@@ -52,18 +57,22 @@ if __name__ == "__main__":
 ### 3. **核心概念**
 
 #### (1) **`ClientSession`**
+
 - `ClientSession` 是 `aiohttp` 的核心对象，用于管理 HTTP 连接。
 - 建议在一个请求会话中重用 `ClientSession`，而不是为每个请求创建新会话。
 - 使用 `async with` 确保正确关闭会话。
 
 #### (2) **请求方法**
+
 `aiohttp.ClientSession` 支持多种 HTTP 方法：
+
 - `session.get(url)`：GET 请求
 - `session.post(url, data)`：POST 请求
 - `session.put(url, data)`：PUT 请求
 - `session.delete(url)`：DELETE 请求
 
 #### (3) **响应处理**
+
 - `response.status`：获取状态码。
 - `await response.text()`：读取响应内容为字符串。
 - `await response.json()`：读取 JSON 格式的响应。
@@ -212,12 +221,15 @@ if __name__ == "__main__":
 ### 8. **常见使用场景**
 
 #### (1) **爬虫**
+
 - 使用 `aiohttp` 并发爬取多个网页，效率远高于同步请求（例如 `requests`）。
 
 #### (2) **API 调用**
+
 - 调用 RESTful API，发送 GET、POST 等请求，获取 JSON 数据。
 
 #### (3) **文件下载**
+
 - 使用 `response.read()` 下载文件：
   ```python
   async def download_file(url, filename):
@@ -228,6 +240,7 @@ if __name__ == "__main__":
   ```
 
 #### (4) **Web 服务器**
+
 - `aiohttp` 也可以用作服务器框架，创建异步 Web 应用：
   ```python
   from aiohttp import web

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import {onBeforeUnmount, onMounted, ref} from "vue";
 
 // 是否显示返回顶部
 const showBackTop = ref(false);
@@ -22,6 +22,7 @@ function throttle(fn, delay = 100) {
     }
   };
 }
+
 const onScroll = throttle(
     () => (showBackTop.value = Boolean(window.scrollY > 200))
 );
