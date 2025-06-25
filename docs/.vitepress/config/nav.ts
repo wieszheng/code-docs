@@ -3,7 +3,7 @@ import type {DefaultTheme} from 'vitepress'
 import {devDependencies} from '../../../package.json'
 
 export const nav: DefaultTheme.Config['nav'] = [
-  {text: '首页', link: '/'},
+  // {text: '首页', link: '/'},
   {
     text: 'Python',
     items: [
@@ -12,6 +12,8 @@ export const nav: DefaultTheme.Config['nav'] = [
         items: [
           {text: 'aiohttp', link: '/python/aiohttp'},
           {text: 'tqdm', link: '/python/tqdm'},
+          {text: 'uv', link: '/python/uv'},
+          {text: 'opencv', link: '/python/cv2'},
         ]
       },
       {
@@ -55,6 +57,25 @@ export const nav: DefaultTheme.Config['nav'] = [
         ]
       },
     ]
+  },
+  {
+    text: '其他',
+    items: [
+      {
+        text: '工具',
+        items: [
+          {text: 'Git', link: '/other/git'},
+          {text: 'Docker', link: '/other/docker'},
+        ]
+      },
+      {
+        text: '软件',
+        items: [
+          {text: 'Telegram', link: '/other/telegram'},
+        ]
+      },
+    ],
+    // activeMatch: '^/other/',
   },
   {text: `VitePress ${devDependencies.vitepress.replace('^', '')}`, link: 'https://vitepress.dev/zh/', noIcon: true},
   {

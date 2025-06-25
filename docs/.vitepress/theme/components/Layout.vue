@@ -43,7 +43,10 @@ provide('toggle-appearance', async ({clientX: x, clientY: y}: MouseEvent) => {
 
 <template>
   <DefaultTheme.Layout>
-    <BackToTop/>
+    <!-- doc-footer-before插槽 -->
+    <template #doc-footer-before>
+      <BackToTop/>
+    </template>
   </DefaultTheme.Layout>
 </template>
 
@@ -62,6 +65,11 @@ provide('toggle-appearance', async ({clientX: x, clientY: y}: MouseEvent) => {
 ::view-transition-new(root),
 .dark::view-transition-old(root) {
   z-index: 9999;
+}
+
+/* 修正因视图过渡导致的按钮图标偏移 */
+.VPSwitchAppearance .check .icon {
+  top: -2px;
 }
 
 </style>

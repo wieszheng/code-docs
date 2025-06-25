@@ -5,13 +5,17 @@ prev: false
 next: false
 ---
 
-# 更新说明
+# 日志
 
 > [!IMPORTANT] 关于更新
 >
 > 首次更新配置内容！
 >
 
+::: timeline 2025-6-25
+
+- 新增文档
+  :::
 
 ::: timeline 2025-6-21
 

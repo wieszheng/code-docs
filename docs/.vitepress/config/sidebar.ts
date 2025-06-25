@@ -10,6 +10,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         items: [
           {text: 'aiohttp', link: 'aiohttp'},
           {text: 'tqdm', link: 'tqdm'},
+          {text: 'opencv', link: 'cv2'},
+          {text: 'uv', link: 'uv'},
         ]
       },
       {
