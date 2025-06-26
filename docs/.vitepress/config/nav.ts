@@ -21,6 +21,7 @@ export const nav: DefaultTheme.Config['nav'] = [
 
         items: [
           {text: 'fastapi', link: '/python/fastapi'},
+          {text: 'pywebview', link: '/python/pywebview'},
         ]
       },
     ]

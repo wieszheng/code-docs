@@ -12,6 +12,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
           {text: 'tqdm', link: 'tqdm'},
           {text: 'opencv', link: 'cv2'},
           {text: 'uv', link: 'uv'},
+          
         ]
       },
       {
@@ -19,6 +20,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         collapsed: false,
         items: [
           {text: 'fastapi', link: 'fastapi'},
+          {text: 'pywebview', link: 'pywebview'},
         ]
       },
     ]
@@ -52,6 +54,24 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         text: '终端',
         items: [
           {text: 'xcode', link: 'xcode'},
+        ]
+      },
+    ]
+  },
+  '/other/': {
+    base: '/other/',
+    items: [
+      {
+        text: '工具',
+        items: [
+          {text: 'Git', link: 'git'},
+          {text: 'Docker', link: 'docker'},
+        ]
+      },
+      {
+        text: '软件',
+        items: [
+          {text: 'Telegram', link: 'telegram'},
         ]
       },
     ]
