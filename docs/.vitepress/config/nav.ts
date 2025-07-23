@@ -14,6 +14,8 @@ export const nav: DefaultTheme.Config['nav'] = [
           {text: 'tqdm', link: '/python/tqdm'},
           {text: 'uv', link: '/python/uv'},
           {text: 'opencv', link: '/python/cv2'},
+          {text: 'py2app', link: '/python/py2app'},
+          {text: 'dmgbuild', link: '/python/dmgbuild'},
         ]
       },
       {

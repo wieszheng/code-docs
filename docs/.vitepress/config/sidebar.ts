@@ -12,6 +12,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
           {text: 'tqdm', link: 'tqdm'},
           {text: 'opencv', link: 'cv2'},
           {text: 'uv', link: 'uv'},
+          {text: 'py2app', link: 'py2app'},
+          {text: 'dmgbuild', link: 'dmgbuild'},
           
         ]
       },
