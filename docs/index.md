@@ -7,7 +7,7 @@ hero:
   text: "wieszheng's code"
   tagline: Technical Learning and Practice Guide
   image:
-    src: /rspress-icon.png
+    src: /shoes.svg
     alt: VitePress
   actions:
     - theme: brand

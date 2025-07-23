@@ -16,7 +16,7 @@ export default defineConfig({
   cleanUrls: true, //开启纯净链接
   lastUpdated: true,
   head: [
-    ['link', {rel: 'icon', href: 'rspress-icon.png', type: 'image/png'}],
+    ['link', {rel: 'icon', href: 'shoes.svg', type: 'image/svg'}],
     ['meta', {name: 'author', content: 'wieszheng'}],
   ],
   markdown: {
@@ -44,7 +44,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/rspress-icon.png',
+    logo: '/shoes.svg',
     //本地搜索
     search: {
       provider: "local",
