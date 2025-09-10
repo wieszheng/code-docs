@@ -69,6 +69,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         items: [
           {text: 'Git', link: '/other/git'},
           {text: 'Docker', link: '/other/docker'},
+          {text: 'Electron', link: '/other/electron'},
         ]
       },
       {
