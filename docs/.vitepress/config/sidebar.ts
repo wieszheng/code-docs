@@ -68,6 +68,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         items: [
           {text: 'Git', link: 'git'},
           {text: 'Docker', link: 'docker'},
+          {text: 'Electron', link: 'electron'},
         ]
       },
       {
